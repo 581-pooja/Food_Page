@@ -1,0 +1,88 @@
+body{
+    font-family: 'Playfair Display', serif;
+}
+
+/* Utility Classes */
+.img_responsive{
+    max-width: 100%;
+}
+ 
+
+.food_image{
+    background: url("https://images.pexels.com/photos/326279/pexels-photo-326279.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500 ")no-repeat;
+    height: 100vh;
+    -webkit-animation-size: cover;
+    background-size: cover;
+    /* vp : viewport height */
+    position: relative;
+}
+
+.food_wrapper{
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.food_wrapper span{
+    margin-left: 62px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+/* Since span is inline element it cannot be applied margin top or bottom 
+but can be applied margin left and right after display: inline-Block it will able to applied margin-bottom */
+
+.food_wrapper h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+.form_code .post_code{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 15x;
+    border: none;
+    outline: none;
+}
+
+.form_code button{
+    width: 40%;
+    text-align: center;
+    background-color: aqua;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin: 20px auto 0px;
+    
+}
+
+/* Product Section */
+
+.product{
+    width: 80%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product_list_item{
+    float: left;
+    width: 30%;
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 700px){
+    .product_list_item{
+        width: 100%;
+        float: none;
+    }
+}
